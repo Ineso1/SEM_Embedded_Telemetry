@@ -1,4 +1,9 @@
+#ifndef BNO055_H
+#define BNO055_H
+
 #include <stdint.h>
+
+#define BNO055_FUNC_RETURN uint8_t
 
 #define START_BYTE				0xAA
 #define RESPONSE_BYTE			0xBB
@@ -427,9 +432,9 @@ typedef enum {
 
  **/
 typedef struct {
-  int16_t accel_offset_x; 
-  int16_t accel_offset_y; 
-  int16_t accel_offset_z; 
+  int16_t acc_offset_x; 
+  int16_t acc_offset_y; 
+  int16_t acc_offset_z; 
 
   int16_t mag_offset_x; 
   int16_t mag_offset_y; 
@@ -439,7 +444,106 @@ typedef struct {
   int16_t gyr_offset_y;
   int16_t gyr_offset_z;
 
-  int16_t accel_radius; /**< acceleration radius */
-  int16_t mag_radius; /**< magnetometer radius */
+  int16_t acc_radius; 
+  int16_t mag_radius; 
 
 } bno055_offsets_t;
+
+typedef struct
+{
+    float x; 
+    float y;
+    float z;
+} bno055_acc_t;
+
+typedef struct
+{
+    float x;
+    float y;
+    float z;
+} bno055_mag_t;
+
+typedef struct
+{
+    float x; 
+    float y; 
+    float z; 
+} bno055_gyr_t;
+
+typedef struct
+{
+    float h;
+    float r;
+    float p;
+} bno055_euler_t;
+
+typedef struct
+{
+    float w; 
+    float x; 
+    float y; 
+    float z; 
+} bno055_quaternion_t;
+
+typedef struct
+{
+    float x;
+    float y;
+    float z;
+} bno055_linear_acc_t;
+
+typedef struct
+{
+    float x;
+    float y;
+    float z;
+} bno055_gravity_t;
+
+
+BNO055_FUNC_RETURN bno055_init();
+BNO055_FUNC_RETURN bno055_write_register();
+BNO055_FUNC_RETURN bno055_read_register();
+
+BNO055_FUNC_RETURN bno055_read_acc_x();
+BNO055_FUNC_RETURN bno055_read_acc_y();
+BNO055_FUNC_RETURN bno055_read_acc_z();
+BNO055_FUNC_RETURN bno055_read_acc_xyz();
+
+BNO055_FUNC_RETURN bno055_read_mag_x();
+BNO055_FUNC_RETURN bno055_read_mag_y();
+BNO055_FUNC_RETURN bno055_read_mag_z();
+BNO055_FUNC_RETURN bno055_read_mag_xyz();
+
+BNO055_FUNC_RETURN bno055_read_gyr_x();
+BNO055_FUNC_RETURN bno055_read_gyr_y();
+BNO055_FUNC_RETURN bno055_read_gyr_z();
+BNO055_FUNC_RETURN bno055_read_gyr_xyz();
+
+BNO055_FUNC_RETURN bno055_read_euler_h();
+BNO055_FUNC_RETURN bno055_read_euler_r();
+BNO055_FUNC_RETURN bno055_read_euler_p();
+BNO055_FUNC_RETURN bno055_read_euler_hrp();
+
+BNO055_FUNC_RETURN bno055_read_quaternion_w();
+BNO055_FUNC_RETURN bno055_read_quaternion_x();
+BNO055_FUNC_RETURN bno055_read_quaternion_y();
+BNO055_FUNC_RETURN bno055_read_quaternion_z();
+BNO055_FUNC_RETURN bno055_read_quaternion_wxyz();
+
+BNO055_FUNC_RETURN bno055_read_linear_acc_x();
+BNO055_FUNC_RETURN bno055_read_linear_acc_y();
+BNO055_FUNC_RETURN bno055_read_linear_acc_z();
+BNO055_FUNC_RETURN bno055_read_linear_acc_xyz();
+
+BNO055_FUNC_RETURN bno055_read_gravity_x();
+BNO055_FUNC_RETURN bno055_read_gravity_y();
+BNO055_FUNC_RETURN bno055_read_gravity_z();
+BNO055_FUNC_RETURN bno055_read_gravity_xyz();
+
+BNO055_FUNC_RETURN bno055_get_acc_calib_status();
+BNO055_FUNC_RETURN bno055_get_mag_calib_status();
+BNO055_FUNC_RETURN bno055_get_gyr_calib_status();
+
+
+
+#endif // BNO055_H
