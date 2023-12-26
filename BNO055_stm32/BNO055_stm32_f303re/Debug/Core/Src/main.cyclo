@@ -1,0 +1,7 @@
+../Core/Inc/BNO055_STM32.h:10:6:bno055_set_i2c	1
+../Core/Inc/BNO055_STM32.h:14:6:bno055_writeData	23
+../Core/Inc/BNO055_STM32.h:75:6:bno055_readData	1
+../Core/Src/main.c:68:5:main	1
+../Core/Src/main.c:115:6:SystemClock_Config	4
+../Core/Src/main.c:167:1:__io_putchar	1
+../Core/Src/main.c:178:6:Error_Handler	1
