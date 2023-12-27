@@ -1,14 +1,284 @@
-16:46:45 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+01:00:59 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
 make -j12 all 
+arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  14236	     20	   2004	  16260	   3f84	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
+In file included from ../Core/Inc/BNO055.h:5,
+                 from ../Core/Src/BNO055.c:1:
+../Core/Inc/BNO055_STM32.h: In function 'bno055_writeData':
+../Core/Inc/BNO055_STM32.h:16:47: error: 'BNO055_I2C_ADDR_LO' undeclared (first use in this function)
+   16 |     status = HAL_I2C_Master_Transmit(i2c_dev, BNO055_I2C_ADDR_LO << 1, &txdata, sizeof(&txdata), 10);
+      |                                               ^~~~~~~~~~~~~~~~~~
+../Core/Inc/BNO055_STM32.h:16:47: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Inc/BNO055_STM32.h:16:72: warning: passing argument 3 of 'HAL_I2C_Master_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+   16 |     status = HAL_I2C_Master_Transmit(i2c_dev, BNO055_I2C_ADDR_LO << 1, &txdata, sizeof(&txdata), 10);
+      |                                                                        ^~~~~~~
+      |                                                                        |
+      |                                                                        uint8_t *** {aka unsigned char ***}
+In file included from ../Core/Inc/stm32f3xx_hal_conf.h:271,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/i2c.h:29,
+                 from ../Core/Inc/BNO055_STM32.h:5,
+                 from ../Core/Inc/BNO055.h:5,
+                 from ../Core/Src/BNO055.c:1:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:626:98: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t ***' {aka 'unsigned char ***'}
+  626 | HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                                         ~~~~~~~~~^~~~~
+In file included from ../Core/Inc/BNO055.h:5,
+                 from ../Core/Src/BNO055.c:1:
+../Core/Inc/BNO055_STM32.h: In function 'bno055_readData':
+../Core/Inc/BNO055_STM32.h:75:38: error: 'BNO055_I2C_ADDR_LO' undeclared (first use in this function)
+   75 |     HAL_I2C_Master_Transmit(i2c_dev, BNO055_I2C_ADDR_LO << 1, &reg, 1, 100);
+      |                                      ^~~~~~~~~~~~~~~~~~
+../Core/Src/BNO055.c: In function 'bno055_init':
+../Core/Src/BNO055.c:13:22: warning: passing argument 1 of 'bno055_writeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   13 |     bno055_writeData(&conf_page0);
+      |                      ^~~~~~~~~~~
+      |                      |
+      |                      uint8_t (*)[2] {aka unsigned char (*)[2]}
+In file included from ../Core/Inc/BNO055.h:5,
+                 from ../Core/Src/BNO055.c:1:
+../Core/Inc/BNO055_STM32.h:14:32: note: expected 'uint8_t **' {aka 'unsigned char **'} but argument is of type 'uint8_t (*)[2]' {aka 'unsigned char (*)[2]'}
+   14 | void bno055_writeData(uint8_t* txdata []) {
+      |                       ~~~~~~~~~^~~~~~~~~
+../Core/Src/BNO055.c:16:22: warning: passing argument 1 of 'bno055_writeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   16 |     bno055_writeData(&pwr_mode);
+      |                      ^~~~~~~~~
+      |                      |
+      |                      uint8_t (*)[2] {aka unsigned char (*)[2]}
+In file included from ../Core/Inc/BNO055.h:5,
+                 from ../Core/Src/BNO055.c:1:
+../Core/Inc/BNO055_STM32.h:14:32: note: expected 'uint8_t **' {aka 'unsigned char **'} but argument is of type 'uint8_t (*)[2]' {aka 'unsigned char (*)[2]'}
+   14 | void bno055_writeData(uint8_t* txdata []) {
+      |                       ~~~~~~~~~^~~~~~~~~
+../Core/Src/BNO055.c:19:22: warning: passing argument 1 of 'bno055_writeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   19 |     bno055_writeData(&op_mode);
+      |                      ^~~~~~~~
+      |                      |
+      |                      uint8_t (*)[2] {aka unsigned char (*)[2]}
+In file included from ../Core/Inc/BNO055.h:5,
+                 from ../Core/Src/BNO055.c:1:
+../Core/Inc/BNO055_STM32.h:14:32: note: expected 'uint8_t **' {aka 'unsigned char **'} but argument is of type 'uint8_t (*)[2]' {aka 'unsigned char (*)[2]'}
+   14 | void bno055_writeData(uint8_t* txdata []) {
+      |                       ~~~~~~~~~^~~~~~~~~
+../Core/Src/BNO055.c:22:22: warning: passing argument 1 of 'bno055_writeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   22 |     bno055_writeData(&axis_remap_conf);
+      |                      ^~~~~~~~~~~~~~~~
+      |                      |
+      |                      uint8_t (*)[2] {aka unsigned char (*)[2]}
+In file included from ../Core/Inc/BNO055.h:5,
+                 from ../Core/Src/BNO055.c:1:
+../Core/Inc/BNO055_STM32.h:14:32: note: expected 'uint8_t **' {aka 'unsigned char **'} but argument is of type 'uint8_t (*)[2]' {aka 'unsigned char (*)[2]'}
+   14 | void bno055_writeData(uint8_t* txdata []) {
+      |                       ~~~~~~~~~^~~~~~~~~
+../Core/Src/BNO055.c:25:22: warning: passing argument 1 of 'bno055_writeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   25 |     bno055_writeData(&axis_remap_sign);
+      |                      ^~~~~~~~~~~~~~~~
+      |                      |
+      |                      uint8_t (*)[2] {aka unsigned char (*)[2]}
+In file included from ../Core/Inc/BNO055.h:5,
+                 from ../Core/Src/BNO055.c:1:
+../Core/Inc/BNO055_STM32.h:14:32: note: expected 'uint8_t **' {aka 'unsigned char **'} but argument is of type 'uint8_t (*)[2]' {aka 'unsigned char (*)[2]'}
+   14 | void bno055_writeData(uint8_t* txdata []) {
+      |                       ~~~~~~~~~^~~~~~~~~
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/BNO055_STM32.h: In function 'bno055_writeData':
+../Core/Inc/BNO055_STM32.h:16:72: warning: passing argument 3 of 'HAL_I2C_Master_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+   16 |     status = HAL_I2C_Master_Transmit(i2c_dev, BNO055_I2C_ADDR_LO << 1, &txdata, sizeof(&txdata), 10);
+      |                                                                        ^~~~~~~
+      |                                                                        |
+      |                                                                        uint8_t *** {aka unsigned char ***}
+../Core/Src/BNO055.c:34:22: warning: passing argument 1 of 'bno055_writeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   34 |     bno055_writeData(&conf_page1);
+      |                      ^~~~~~~~~~~
+      |                      |
+      |                      uint8_t (*)[2] {aka unsigned char (*)[2]}
+In file included from ../Core/Inc/BNO055.h:5,
+                 from ../Core/Src/BNO055.c:1:
+../Core/Inc/BNO055_STM32.h:14:32: note: expected 'uint8_t **' {aka 'unsigned char **'} but argument is of type 'uint8_t (*)[2]' {aka 'unsigned char (*)[2]'}
+   14 | void bno055_writeData(uint8_t* txdata []) {
+      |                       ~~~~~~~~~^~~~~~~~~
+In file included from ../Core/Inc/stm32f3xx_hal_conf.h:271,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:626:98: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t ***' {aka 'unsigned char ***'}
+  626 | HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                                         ~~~~~~~~~^~~~~
+../Core/Src/BNO055.c:37:22: warning: passing argument 1 of 'bno055_writeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   37 |     bno055_writeData(&acc_conf);
+      |                      ^~~~~~~~~
+      |                      |
+      |                      uint8_t (*)[2] {aka unsigned char (*)[2]}
+In file included from ../Core/Inc/BNO055.h:5,
+                 from ../Core/Src/BNO055.c:1:
+../Core/Inc/BNO055_STM32.h:14:32: note: expected 'uint8_t **' {aka 'unsigned char **'} but argument is of type 'uint8_t (*)[2]' {aka 'unsigned char (*)[2]'}
+   14 | void bno055_writeData(uint8_t* txdata []) {
+      |                       ~~~~~~~~~^~~~~~~~~
+../Core/Src/BNO055.c:40:22: warning: passing argument 1 of 'bno055_writeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   40 |     bno055_writeData(&gyr_conf0);
+      |                      ^~~~~~~~~~
+      |                      |
+      |                      uint8_t (*)[2] {aka unsigned char (*)[2]}
+In file included from ../Core/Inc/BNO055.h:5,
+                 from ../Core/Src/BNO055.c:1:
+../Core/Inc/BNO055_STM32.h:14:32: note: expected 'uint8_t **' {aka 'unsigned char **'} but argument is of type 'uint8_t (*)[2]' {aka 'unsigned char (*)[2]'}
+   14 | void bno055_writeData(uint8_t* txdata []) {
+      |                       ~~~~~~~~~^~~~~~~~~
+../Core/Src/BNO055.c:43:22: warning: passing argument 1 of 'bno055_writeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   43 |     bno055_writeData(&gyr_conf1);
+      |                      ^~~~~~~~~~
+      |                      |
+      |                      uint8_t (*)[2] {aka unsigned char (*)[2]}
+In file included from ../Core/Inc/BNO055.h:5,
+                 from ../Core/Src/BNO055.c:1:
+../Core/Inc/BNO055_STM32.h:14:32: note: expected 'uint8_t **' {aka 'unsigned char **'} but argument is of type 'uint8_t (*)[2]' {aka 'unsigned char (*)[2]'}
+   14 | void bno055_writeData(uint8_t* txdata []) {
+      |                       ~~~~~~~~~^~~~~~~~~
+../Core/Src/BNO055.c:46:22: warning: passing argument 1 of 'bno055_writeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   46 |     bno055_writeData(&mag_conf);
+      |                      ^~~~~~~~~
+      |                      |
+      |                      uint8_t (*)[2] {aka unsigned char (*)[2]}
+In file included from ../Core/Inc/BNO055.h:5,
+                 from ../Core/Src/BNO055.c:1:
+../Core/Inc/BNO055_STM32.h:14:32: note: expected 'uint8_t **' {aka 'unsigned char **'} but argument is of type 'uint8_t (*)[2]' {aka 'unsigned char (*)[2]'}
+   14 | void bno055_writeData(uint8_t* txdata []) {
+      |                       ~~~~~~~~~^~~~~~~~~
+../Core/Src/BNO055.c:11:13: warning: unused variable 'unit_sel' [-Wunused-variable]
+   11 |     uint8_t unit_sel [2] = {BNO055_OPR_MODE, bno055_conf->unit_sel};
+      |             ^~~~~~~~
+../Core/Src/BNO055.c:49:1: warning: control reaches end of non-void function [-Wreturn-type]
+   49 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_acc_x':
+../Core/Src/BNO055.c:55:1: warning: control reaches end of non-void function [-Wreturn-type]
+   55 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_acc_y':
+../Core/Src/BNO055.c:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+   60 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_acc_z':
+../Core/Src/BNO055.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
+   65 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_acc_xyz':
+../Core/Src/BNO055.c:72:1: warning: control reaches end of non-void function [-Wreturn-type]
+   72 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_mag_x':
+../Core/Src/BNO055.c:78:1: warning: control reaches end of non-void function [-Wreturn-type]
+   78 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_mag_y':
+../Core/Src/BNO055.c:83:1: warning: control reaches end of non-void function [-Wreturn-type]
+   83 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_mag_z':
+../Core/Src/BNO055.c:88:1: warning: control reaches end of non-void function [-Wreturn-type]
+   88 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_mag_xyz':
+../Core/Src/BNO055.c:95:1: warning: control reaches end of non-void function [-Wreturn-type]
+   95 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_gyr_x':
+../Core/Src/BNO055.c:101:1: warning: control reaches end of non-void function [-Wreturn-type]
+  101 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_gyr_y':
+../Core/Src/BNO055.c:106:1: warning: control reaches end of non-void function [-Wreturn-type]
+  106 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_gyr_z':
+../Core/Src/BNO055.c:111:1: warning: control reaches end of non-void function [-Wreturn-type]
+  111 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_gyr_xyz':
+../Core/Src/BNO055.c:118:1: warning: control reaches end of non-void function [-Wreturn-type]
+  118 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_euler_h':
+../Core/Src/BNO055.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+  122 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_euler_r':
+../Core/Src/BNO055.c:125:1: warning: control reaches end of non-void function [-Wreturn-type]
+  125 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_euler_p':
+../Core/Src/BNO055.c:128:1: warning: control reaches end of non-void function [-Wreturn-type]
+  128 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_euler_hrp':
+../Core/Src/BNO055.c:131:1: warning: control reaches end of non-void function [-Wreturn-type]
+  131 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_quaternion_w':
+../Core/Src/BNO055.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+  135 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_quaternion_x':
+../Core/Src/BNO055.c:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+  138 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_quaternion_y':
+../Core/Src/BNO055.c:141:1: warning: control reaches end of non-void function [-Wreturn-type]
+  141 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_quaternion_z':
+../Core/Src/BNO055.c:144:1: warning: control reaches end of non-void function [-Wreturn-type]
+  144 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_quaternion_wxyz':
+../Core/Src/BNO055.c:147:1: warning: control reaches end of non-void function [-Wreturn-type]
+  147 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_linear_acc_x':
+../Core/Src/BNO055.c:151:1: warning: control reaches end of non-void function [-Wreturn-type]
+  151 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_linear_acc_y':
+../Core/Src/BNO055.c:154:1: warning: control reaches end of non-void function [-Wreturn-type]
+  154 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_linear_acc_z':
+../Core/Src/BNO055.c:157:1: warning: control reaches end of non-void function [-Wreturn-type]
+  157 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_linear_acc_xyz':
+../Core/Src/BNO055.c:160:1: warning: control reaches end of non-void function [-Wreturn-type]
+  160 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_gravity_x':
+../Core/Src/BNO055.c:164:1: warning: control reaches end of non-void function [-Wreturn-type]
+  164 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_gravity_y':
+../Core/Src/BNO055.c:167:1: warning: control reaches end of non-void function [-Wreturn-type]
+  167 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_gravity_z':
+../Core/Src/BNO055.c:170:1: warning: control reaches end of non-void function [-Wreturn-type]
+  170 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_read_gravity_xyz':
+../Core/Src/BNO055.c:173:1: warning: control reaches end of non-void function [-Wreturn-type]
+  173 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_get_acc_calib_status':
+../Core/Src/BNO055.c:177:1: warning: control reaches end of non-void function [-Wreturn-type]
+  177 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_get_mag_calib_status':
+../Core/Src/BNO055.c:180:1: warning: control reaches end of non-void function [-Wreturn-type]
+  180 | }
+      | ^
+../Core/Src/BNO055.c: In function 'bno055_get_gyr_calib_status':
+../Core/Src/BNO055.c:183:1: warning: control reaches end of non-void function [-Wreturn-type]
+  183 | }
+      | ^
+make: *** [Core/Src/subdir.mk:52: Core/Src/BNO055.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.

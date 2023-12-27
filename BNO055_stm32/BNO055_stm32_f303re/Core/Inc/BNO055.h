@@ -519,8 +519,6 @@ typedef struct{
 } bno055_conf_t;
 
 BNO055_FUNC_RETURN bno055_init(bno055_conf_t *);
-BNO055_FUNC_RETURN bno055_write_register();
-BNO055_FUNC_RETURN bno055_read_register();
 
 BNO055_FUNC_RETURN bno055_read_acc_x();
 BNO055_FUNC_RETURN bno055_read_acc_y();

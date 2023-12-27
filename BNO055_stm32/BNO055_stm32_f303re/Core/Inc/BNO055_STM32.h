@@ -11,10 +11,9 @@ void bno055_set_i2c_handler(I2C_HandleTypeDef* hi2c){
     i2c_dev = hi2c;
 }
 
-void bno055_writeData(uint8_t reg, uint8_t data) {
-    uint8_t txdata[2] = {reg, data};
+void bno055_writeData(uint8_t* txdata []) {
     uint8_t status;
-    status = HAL_I2C_Master_Transmit(i2c_dev, BNO055_I2C_ADDR_LO << 1, txdata, sizeof(txdata), 10);
+    status = HAL_I2C_Master_Transmit(i2c_dev, BNO055_I2C_ADDR_LO << 1, &txdata, sizeof(&txdata), 10);
     if (status == HAL_OK) {
         return;
     }
@@ -75,6 +74,10 @@ void bno055_writeData(uint8_t reg, uint8_t data) {
 void bno055_readData(uint8_t reg, uint8_t *data, uint8_t len) {
     HAL_I2C_Master_Transmit(i2c_dev, BNO055_I2C_ADDR_LO << 1, &reg, 1, 100);
     HAL_I2C_Master_Receive(i2c_dev, BNO055_I2C_ADDR_LO << 1, data, len, 100);
+}
+
+void bno055_delay(uint32_t ms){
+    HAL_Delay(ms);
 }
 
 #endif
