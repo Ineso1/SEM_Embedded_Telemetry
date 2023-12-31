@@ -1,230 +1,62 @@
-17:32:51 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23188	    128	   2360	  25676	   644c	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-17:33:16 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23188	    128	   2360	  25676	   644c	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-17:36:05 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23188	    128	   2360	  25676	   644c	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-17:37:26 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  23188	    128	   2360	  25676	   644c	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-17:37:30 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23188	    128	   2360	  25676	   644c	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-17:38:09 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23188	    128	   2360	  25676	   644c	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-17:57:56 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23188	    128	   2360	  25676	   644c	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-17:59:55 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  23188	    128	   2360	  25676	   644c	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:03:02 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  23192	    128	   2360	  25680	   6450	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:03:39 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  23192	    128	   2360	  25680	   6450	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:05:50 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23192	    128	   2360	  25680	   6450	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-18:08:40 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23192	    128	   2360	  25680	   6450	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-18:08:57 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23192	    128	   2360	  25680	   6450	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-18:10:48 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  23236	    128	   2360	  25724	   647c	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:10:53 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23236	    128	   2360	  25724	   647c	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-18:22:00 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/BNO055.c:36:8: error: conflicting types for 'bno055_writeData'; have 'int8_t(uint8_t *)' {aka 'signed char(unsigned char *)'}
-   36 | int8_t bno055_writeData(uint8_t* txdata) {
-      |        ^~~~~~~~~~~~~~~~
-In file included from ../Core/Src/BNO055.c:1:
-../Core/Inc/BNO055.h:535:6: note: previous declaration of 'bno055_writeData' with type 'void(uint8_t *)' {aka 'void(unsigned char *)'}
-  535 | void bno055_writeData(uint8_t *);
-      |      ^~~~~~~~~~~~~~~~
-../Core/Src/BNO055.c: In function 'bno055_writeData':
-../Core/Src/BNO055.c:55:9: warning: 'return' with no value, in function returning non-void [-Wreturn-type]
-   55 |         return;
-      |         ^~~~~~
-../Core/Src/BNO055.c:36:8: note: declared here
-   36 | int8_t bno055_writeData(uint8_t* txdata) {
-      |        ^~~~~~~~~~~~~~~~
-../Core/Src/BNO055.c: At top level:
-../Core/Src/BNO055.c:97:8: error: conflicting types for 'bno055_readData'; have 'int8_t(uint8_t,  uint8_t *, uint8_t)' {aka 'signed char(unsigned char,  unsigned char *, unsigned char)'}
-   97 | int8_t bno055_readData(uint8_t reg, uint8_t *data, uint8_t len) {
-      |        ^~~~~~~~~~~~~~~
-In file included from ../Core/Src/BNO055.c:1:
-../Core/Inc/BNO055.h:536:6: note: previous declaration of 'bno055_readData' with type 'void(uint8_t,  uint8_t *, uint8_t)' {aka 'void(unsigned char,  unsigned char *, unsigned char)'}
-  536 | void bno055_readData(uint8_t, uint8_t *, uint8_t);
-      |      ^~~~~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:52: Core/Src/BNO055.o] Error 1
-make: *** Waiting for unfinished jobs....
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-18:23:18 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/BNO055.c: In function 'bno055_writeData':
-../Core/Src/BNO055.c:55:9: warning: 'return' with no value, in function returning non-void [-Wreturn-type]
-   55 |         return;
-      |         ^~~~~~
-../Core/Src/BNO055.c:36:9: note: declared here
-   36 | uint8_t bno055_writeData(uint8_t* txdata) {
-      |         ^~~~~~~~~~~~~~~~
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  22768	    128	   2360	  25256	   62a8	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:23:25 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  22768	    128	   2360	  25256	   62a8	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-18:24:16 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  22768	    128	   2360	  25256	   62a8	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-18:26:11 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+02:01:39 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
 ../Core/Src/BNO055.c: In function 'bno055_writeData':
-../Core/Src/BNO055.c:55:9: warning: 'return' with no value, in function returning non-void [-Wreturn-type]
-   55 |         return;
-      |         ^~~~~~
-../Core/Src/BNO055.c:36:9: note: declared here
-   36 | uint8_t bno055_writeData(uint8_t* txdata) {
-      |         ^~~~~~~~~~~~~~~~
+../Core/Src/BNO055.c:38:72: warning: passing argument 3 of 'HAL_I2C_Master_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+   38 |     status = HAL_I2C_Master_Transmit(i2c_dev, BNO055_I2C_ADDR_LO << 1, *txdata, sizeof(*txdata), 10);
+      |                                                                        ^~~~~~~
+      |                                                                        |
+      |                                                                        uint8_t {aka unsigned char}
+In file included from ../Core/Inc/stm32f3xx_hal_conf.h:271,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/i2c.h:29,
+                 from ../Core/Inc/BNO055.h:5,
+                 from ../Core/Src/BNO055.c:1:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:626:98: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+  626 | HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                                         ~~~~~~~~~^~~~~
 arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: BNO055_stm32_f303re.elf
  
 arm-none-eabi-size   BNO055_stm32_f303re.elf 
 arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
    text	   data	    bss	    dec	    hex	filename
-  22216	    128	   2360	  24704	   6080	BNO055_stm32_f303re.elf
+  24800	    128	   2360	  27288	   6a98	BNO055_stm32_f303re.elf
 Finished building: default.size.stdout
  
 Finished building: BNO055_stm32_f303re.list
  
-18:26:55 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+02:01:59 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
+../Core/Src/BNO055.c: In function 'bno055_writeData':
+../Core/Src/BNO055.c:38:72: warning: passing argument 3 of 'HAL_I2C_Master_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+   38 |     status = HAL_I2C_Master_Transmit(i2c_dev, BNO055_I2C_ADDR_LO << 1, &txdata, sizeof(&txdata), 10);
+      |                                                                        ^~~~~~~
+      |                                                                        |
+      |                                                                        uint8_t ** {aka unsigned char **}
+In file included from ../Core/Inc/stm32f3xx_hal_conf.h:271,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/i2c.h:29,
+                 from ../Core/Inc/BNO055.h:5,
+                 from ../Core/Src/BNO055.c:1:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:626:98: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+  626 | HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                                         ~~~~~~~~~^~~~~
+arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: BNO055_stm32_f303re.elf
+ 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
+   text	   data	    bss	    dec	    hex	filename
+  24796	    128	   2360	  27284	   6a94	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+Finished building: BNO055_stm32_f303re.list
+ 
+02:08:47 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
 arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
@@ -233,37 +65,19 @@ Finished building target: BNO055_stm32_f303re.elf
 arm-none-eabi-size   BNO055_stm32_f303re.elf 
 arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
    text	   data	    bss	    dec	    hex	filename
-  22220	    128	   2360	  24708	   6084	BNO055_stm32_f303re.elf
+  24796	    128	   2360	  27284	   6a94	BNO055_stm32_f303re.elf
 Finished building: default.size.stdout
  
 Finished building: BNO055_stm32_f303re.list
  
-18:27:53 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+02:09:03 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
 make -j12 all 
 arm-none-eabi-size   BNO055_stm32_f303re.elf 
    text	   data	    bss	    dec	    hex	filename
-  22220	    128	   2360	  24708	   6084	BNO055_stm32_f303re.elf
+  24796	    128	   2360	  27284	   6a94	BNO055_stm32_f303re.elf
 Finished building: default.size.stdout
  
-18:29:26 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-../Core/Src/BNO055.c: In function 'bno055_init':
-../Core/Src/BNO055.c:123:13: warning: unused variable 'op_mode_conf' [-Wunused-variable]
-  123 |     uint8_t op_mode_conf [2] = {BNO055_OPR_MODE, OPERATION_MODE_CONFIG};
-      |             ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  21912	    128	   2360	  24400	   5f50	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:30:07 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+02:11:46 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
 arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
@@ -272,120 +86,12 @@ Finished building target: BNO055_stm32_f303re.elf
 arm-none-eabi-size   BNO055_stm32_f303re.elf 
 arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
    text	   data	    bss	    dec	    hex	filename
-  21940	    128	   2360	  24428	   5f6c	BNO055_stm32_f303re.elf
+  24796	    128	   2360	  27284	   6a94	BNO055_stm32_f303re.elf
 Finished building: default.size.stdout
  
 Finished building: BNO055_stm32_f303re.list
  
-18:31:13 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-../Core/Src/BNO055.c: In function 'bno055_init':
-../Core/Src/BNO055.c:135:17: warning: unused variable 'mag_conf' [-Wunused-variable]
-  135 |         uint8_t mag_conf [2] = {BNO055_MAG_CONFIG, bno055_conf->mag_pwr_mode << 5 | bno055_conf->mag_op_mode << 3 | bno055_conf->mag_data_rate };
-      |                 ^~~~~~~~
-../Core/Src/BNO055.c:134:17: warning: unused variable 'gyr_conf1' [-Wunused-variable]
-  134 |         uint8_t gyr_conf1 [2] = {BNO055_GYRO_CONFIG_1, bno055_conf->gyr_op_mode };
-      |                 ^~~~~~~~~
-../Core/Src/BNO055.c:133:17: warning: unused variable 'gyr_conf0' [-Wunused-variable]
-  133 |         uint8_t gyr_conf0 [2] = {BNO055_GYRO_CONFIG_0, bno055_conf->gyr_bandwidth << 3 | bno055_conf->gyr_range };
-      |                 ^~~~~~~~~
-../Core/Src/BNO055.c:132:17: warning: unused variable 'acc_conf' [-Wunused-variable]
-  132 |         uint8_t acc_conf [2] = {BNO055_ACC_CONFIG, bno055_conf->acc_operation_mode << 5 | bno055_conf->acc_bandwidth << 2 | bno055_conf->acc_g_range };
-      |                 ^~~~~~~~
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  22100	    128	   2360	  24588	   600c	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:31:57 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-../Core/Src/BNO055.c: In function 'bno055_init':
-../Core/Src/BNO055.c:135:17: warning: unused variable 'mag_conf' [-Wunused-variable]
-  135 |         uint8_t mag_conf [2] = {BNO055_MAG_CONFIG, bno055_conf->mag_pwr_mode << 5 | bno055_conf->mag_op_mode << 3 | bno055_conf->mag_data_rate };
-      |                 ^~~~~~~~
-../Core/Src/BNO055.c:134:17: warning: unused variable 'gyr_conf1' [-Wunused-variable]
-  134 |         uint8_t gyr_conf1 [2] = {BNO055_GYRO_CONFIG_1, bno055_conf->gyr_op_mode };
-      |                 ^~~~~~~~~
-../Core/Src/BNO055.c:133:17: warning: unused variable 'gyr_conf0' [-Wunused-variable]
-  133 |         uint8_t gyr_conf0 [2] = {BNO055_GYRO_CONFIG_0, bno055_conf->gyr_bandwidth << 3 | bno055_conf->gyr_range };
-      |                 ^~~~~~~~~
-../Core/Src/BNO055.c:132:17: warning: unused variable 'acc_conf' [-Wunused-variable]
-  132 |         uint8_t acc_conf [2] = {BNO055_ACC_CONFIG, bno055_conf->acc_operation_mode << 5 | bno055_conf->acc_bandwidth << 2 | bno055_conf->acc_g_range };
-      |                 ^~~~~~~~
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  22100	    128	   2360	  24588	   600c	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:32:25 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-../Core/Src/BNO055.c: In function 'bno055_init':
-../Core/Src/BNO055.c:135:17: warning: unused variable 'mag_conf' [-Wunused-variable]
-  135 |         uint8_t mag_conf [2] = {BNO055_MAG_CONFIG, bno055_conf->mag_pwr_mode << 5 | bno055_conf->mag_op_mode << 3 | bno055_conf->mag_data_rate };
-      |                 ^~~~~~~~
-../Core/Src/BNO055.c:134:17: warning: unused variable 'gyr_conf1' [-Wunused-variable]
-  134 |         uint8_t gyr_conf1 [2] = {BNO055_GYRO_CONFIG_1, bno055_conf->gyr_op_mode };
-      |                 ^~~~~~~~~
-../Core/Src/BNO055.c:133:17: warning: unused variable 'gyr_conf0' [-Wunused-variable]
-  133 |         uint8_t gyr_conf0 [2] = {BNO055_GYRO_CONFIG_0, bno055_conf->gyr_bandwidth << 3 | bno055_conf->gyr_range };
-      |                 ^~~~~~~~~
-../Core/Src/BNO055.c:132:17: warning: unused variable 'acc_conf' [-Wunused-variable]
-  132 |         uint8_t acc_conf [2] = {BNO055_ACC_CONFIG, bno055_conf->acc_operation_mode << 5 | bno055_conf->acc_bandwidth << 2 | bno055_conf->acc_g_range };
-      |                 ^~~~~~~~
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  22100	    128	   2360	  24588	   600c	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:33:15 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-../Core/Src/BNO055.c: In function 'bno055_init':
-../Core/Src/BNO055.c:135:17: warning: unused variable 'mag_conf' [-Wunused-variable]
-  135 |         uint8_t mag_conf [2] = {BNO055_MAG_CONFIG, bno055_conf->mag_pwr_mode << 5 | bno055_conf->mag_op_mode << 3 | bno055_conf->mag_data_rate };
-      |                 ^~~~~~~~
-../Core/Src/BNO055.c:134:17: warning: unused variable 'gyr_conf1' [-Wunused-variable]
-  134 |         uint8_t gyr_conf1 [2] = {BNO055_GYRO_CONFIG_1, bno055_conf->gyr_op_mode };
-      |                 ^~~~~~~~~
-../Core/Src/BNO055.c:133:17: warning: unused variable 'gyr_conf0' [-Wunused-variable]
-  133 |         uint8_t gyr_conf0 [2] = {BNO055_GYRO_CONFIG_0, bno055_conf->gyr_bandwidth << 3 | bno055_conf->gyr_range };
-      |                 ^~~~~~~~~
-../Core/Src/BNO055.c:132:17: warning: unused variable 'acc_conf' [-Wunused-variable]
-  132 |         uint8_t acc_conf [2] = {BNO055_ACC_CONFIG, bno055_conf->acc_operation_mode << 5 | bno055_conf->acc_bandwidth << 2 | bno055_conf->acc_g_range };
-      |                 ^~~~~~~~
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  22100	    128	   2360	  24588	   600c	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:34:03 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+02:12:28 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
 arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
@@ -394,12 +100,19 @@ Finished building target: BNO055_stm32_f303re.elf
 arm-none-eabi-size   BNO055_stm32_f303re.elf 
 arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
    text	   data	    bss	    dec	    hex	filename
-  22220	    128	   2360	  24708	   6084	BNO055_stm32_f303re.elf
+  24796	    128	   2360	  27284	   6a94	BNO055_stm32_f303re.elf
 Finished building: default.size.stdout
  
 Finished building: BNO055_stm32_f303re.list
  
-18:34:40 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+02:13:23 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24796	    128	   2360	  27284	   6a94	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+02:17:51 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
 arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
@@ -408,19 +121,12 @@ Finished building target: BNO055_stm32_f303re.elf
 arm-none-eabi-size   BNO055_stm32_f303re.elf 
 arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
    text	   data	    bss	    dec	    hex	filename
-  22220	    128	   2360	  24708	   6084	BNO055_stm32_f303re.elf
+  24796	    128	   2360	  27284	   6a94	BNO055_stm32_f303re.elf
 Finished building: default.size.stdout
  
 Finished building: BNO055_stm32_f303re.list
  
-18:37:33 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  22220	    128	   2360	  24708	   6084	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-18:38:13 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+02:22:15 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
 arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
@@ -429,366 +135,8 @@ Finished building target: BNO055_stm32_f303re.elf
 arm-none-eabi-size   BNO055_stm32_f303re.elf 
 arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
    text	   data	    bss	    dec	    hex	filename
-  22220	    128	   2360	  24708	   6084	BNO055_stm32_f303re.elf
+  24796	    128	   2360	  27284	   6a94	BNO055_stm32_f303re.elf
 Finished building: default.size.stdout
  
 Finished building: BNO055_stm32_f303re.list
- 
-18:38:44 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  22220	    128	   2360	  24708	   6084	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:40:57 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  22220	    128	   2360	  24708	   6084	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:41:33 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  22220	    128	   2360	  24708	   6084	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:42:09 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  22220	    128	   2360	  24708	   6084	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:42:53 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  22464	    128	   2360	  24952	   6178	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:43:30 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  22464	    128	   2360	  24952	   6178	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:44:41 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  22776	    128	   2360	  25264	   62b0	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:46:18 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  22768	    128	   2360	  25256	   62a8	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:47:00 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  22768	    128	   2360	  25256	   62a8	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-18:48:35 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  22788	    128	   2360	  25276	   62bc	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:50:47 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  22788	    128	   2360	  25276	   62bc	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-18:51:51 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  22788	    128	   2360	  25276	   62bc	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-18:54:28 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  22788	    128	   2360	  25276	   62bc	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-18:54:57 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  22788	    128	   2360	  25276	   62bc	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-18:55:56 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  22788	    128	   2360	  25276	   62bc	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-18:56:11 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  22788	    128	   2360	  25276	   62bc	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-19:00:10 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  22788	    128	   2360	  25276	   62bc	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-19:05:28 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  23580	    128	   2360	  26068	   65d4	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-19:06:11 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  23560	    128	   2360	  26048	   65c0	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-19:06:44 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23560	    128	   2360	  26048	   65c0	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-19:09:01 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23560	    128	   2360	  26048	   65c0	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-19:11:29 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  23560	    128	   2360	  26048	   65c0	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-19:33:16 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/BNO055.c: In function 'bno055_read_mag_z':
-../Core/Src/BNO055.c:257:12: error: expected expression before 'uint8_t'
-  257 |     ret += uint8_t data[2] = {0,0};
-      |            ^~~~~~~
-../Core/Src/BNO055.c:258:44: error: 'data' undeclared (first use in this function)
-  258 |     bno055_readData(BNO055_MAG_DATA_Z_LSB, data, 2);
-      |                                            ^~~~
-../Core/Src/BNO055.c:258:44: note: each undeclared identifier is reported only once for each function it appears in
-../Core/Src/BNO055.c: In function 'bno055_read_mag_xyz':
-../Core/Src/BNO055.c:264:12: error: expected expression before 'uint8_t'
-  264 |     ret += uint8_t data[6] = {0,0,0,0,0,0};
-      |            ^~~~~~~
-../Core/Src/BNO055.c:265:44: error: 'data' undeclared (first use in this function)
-  265 |     bno055_readData(BNO055_MAG_DATA_X_LSB, data, 6);
-      |                                            ^~~~
-make: *** [Core/Src/subdir.mk:52: Core/Src/BNO055.o] Error 1
-make: *** Waiting for unfinished jobs....
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-19:33:22 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-../Core/Src/BNO055.c: In function 'bno055_read_mag_z':
-../Core/Src/BNO055.c:257:12: error: expected expression before 'uint8_t'
-  257 |     ret += uint8_t data[2] = {0,0};
-      |            ^~~~~~~
-../Core/Src/BNO055.c:258:44: error: 'data' undeclared (first use in this function)
-  258 |     bno055_readData(BNO055_MAG_DATA_Z_LSB, data, 2);
-      |                                            ^~~~
-../Core/Src/BNO055.c:258:44: note: each undeclared identifier is reported only once for each function it appears in
-../Core/Src/BNO055.c: In function 'bno055_read_mag_xyz':
-../Core/Src/BNO055.c:264:12: error: expected expression before 'uint8_t'
-  264 |     ret += uint8_t data[6] = {0,0,0,0,0,0};
-      |            ^~~~~~~
-../Core/Src/BNO055.c:265:44: error: 'data' undeclared (first use in this function)
-  265 |     bno055_readData(BNO055_MAG_DATA_X_LSB, data, 6);
-      |                                            ^~~~
-make: *** [Core/Src/subdir.mk:52: Core/Src/BNO055.o] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-19:34:02 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  23580	    128	   2360	  26068	   65d4	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-19:34:07 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23580	    128	   2360	  26068	   65d4	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-19:34:20 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23580	    128	   2360	  26068	   65d4	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-19:34:37 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23580	    128	   2360	  26068	   65d4	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-19:36:26 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: BNO055_stm32_f303re.elf
- 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
-   text	   data	    bss	    dec	    hex	filename
-  23580	    128	   2360	  26068	   65d4	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-Finished building: BNO055_stm32_f303re.list
- 
-19:36:31 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23580	    128	   2360	  26068	   65d4	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-19:36:50 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23580	    128	   2360	  26068	   65d4	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
- 
-19:42:20 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
-make -j12 all 
-arm-none-eabi-size   BNO055_stm32_f303re.elf 
-   text	   data	    bss	    dec	    hex	filename
-  23580	    128	   2360	  26068	   65d4	BNO055_stm32_f303re.elf
-Finished building: default.size.stdout
  

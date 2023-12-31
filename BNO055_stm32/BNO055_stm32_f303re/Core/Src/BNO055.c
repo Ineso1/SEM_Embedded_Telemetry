@@ -4,7 +4,7 @@ I2C_HandleTypeDef* i2c_dev;
 
 bno055_conf_t default_bno055_config = {
     .pwr_mode = POWER_MODE_NORMAL, // Default power mode
-    .op_mode = OPERATION_MODE_NDOF, // Default operation mode (9 Degrees of Freedom)
+    .op_mode = OPERATION_MODE_ACCGYRO, // Default operation mode (9 Degrees of Freedom)
     .axis_remap_conf = AXIS_REMAP_CONFIG_P0, // Default axis remap configuration
     .axis_remap_sign = AXIS_REMAP_SIGN_P0, // Default axis remap sign
     .acc_g_range = ACC_CONFIG_4G, // Default accelerometer G range
@@ -131,20 +131,20 @@ BNO055_FUNC_RETURN bno055_init(bno055_conf_t * bno055_conf, bno055_verification_
 	uint8_t gyr_conf1 [2] = {BNO055_GYRO_CONFIG_1, bno055_conf->gyr_op_mode };
 	uint8_t mag_conf [2] = {BNO055_MAG_CONFIG, bno055_conf->mag_pwr_mode << 5 | bno055_conf->mag_op_mode << 3 | bno055_conf->mag_data_rate };
 
-	ret +=bno055_writeData(conf_page1);
+	ret += bno055_writeData(conf_page1);
 	bno055_delay(10);
 
 
-	ret +=bno055_writeData(acc_conf);
+	ret += bno055_writeData(acc_conf);
 	bno055_delay(10);
 
-	ret +=bno055_writeData(gyr_conf0);
+	ret += bno055_writeData(gyr_conf0);
 	bno055_delay(10);
 
-	ret +=bno055_writeData(gyr_conf1);
+	ret += bno055_writeData(gyr_conf1);
 	bno055_delay(10);
 
-	ret +=bno055_writeData(mag_conf);
+	ret += bno055_writeData(mag_conf);
 	bno055_delay(10);
 
 

@@ -99,15 +99,20 @@ int main(void)
   /* USER CODE END 2 */
   // Initialize BNO055 configuration
   ret = bno055_init(&default_bno055_config, &default_bno055_verification);
-  gyr_data = 0;
+
+  char buffer[100];
+  uint16_t gyro_x, gyro_y, gyro_z;
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
 	  HAL_Delay(300);
 	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-	  bno055_read_gyr_x(&gyr_data);
-	  HAL_UART_Transmit(&huart2, (uint8_t *)&gyr_data, sizeof(gyr_data), HAL_MAX_DELAY);
+	  bno055_read_euler_h(&gyro_x);
+	  bno055_read_euler_r(&gyro_y);
+	  bno055_read_euler_p(&gyro_z);
+	  snprintf(buffer, sizeof(buffer), "Gyro: X=%d Y=%d Z=%d\r\n", gyro_x, gyro_y, gyro_z);
+	  HAL_UART_Transmit(&huart2, (uint8_t *)buffer, strlen(buffer), HAL_MAX_DELAY);
 	  //printf("Aqui\r\n");
     /* USER CODE END WHILE */
 
