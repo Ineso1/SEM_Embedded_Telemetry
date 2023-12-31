@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-#define BNO055_FUNC_RETURN uint8_t
+#define BNO055_FUNC_RETURN uint16_t
 
 #define START_BYTE				0xAA
 #define RESPONSE_BYTE			0xBB

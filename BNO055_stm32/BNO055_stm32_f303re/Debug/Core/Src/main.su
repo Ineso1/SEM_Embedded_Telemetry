@@ -1,8 +1,4 @@
-../Core/Inc/BNO055_STM32.h:10:6:bno055_set_i2c_handler	16	static
-../Core/Inc/BNO055_STM32.h:14:6:bno055_writeData	40	static
-../Core/Inc/BNO055_STM32.h:74:6:bno055_readData	24	static
-../Core/Inc/BNO055_STM32.h:79:6:bno055_delay	16	static
-../Core/Src/main.c:68:5:main	8	static
-../Core/Src/main.c:115:6:SystemClock_Config	160	static
-../Core/Src/main.c:167:1:__io_putchar	16	static
-../Core/Src/main.c:178:6:Error_Handler	4	static,ignoring_inline_asm
+../Core/Src/main.c:69:5:main	8	static
+../Core/Src/main.c:123:6:SystemClock_Config	160	static
+../Core/Src/main.c:175:1:__io_putchar	16	static
+../Core/Src/main.c:186:6:Error_Handler	4	static,ignoring_inline_asm

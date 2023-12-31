@@ -1,6 +1,6 @@
 Core/Src/BNO055.o: ../Core/Src/BNO055.c ../Core/Inc/BNO055.h \
- ../Core/Inc/BNO055_STM32.h ../Core/Inc/BNO055.h ../Core/Inc/i2c.h \
- ../Core/Inc/main.h ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h \
+ ../Core/Inc/i2c.h ../Core/Inc/main.h \
+ ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h \
  ../Core/Inc/stm32f3xx_hal_conf.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h \
@@ -30,8 +30,6 @@ Core/Src/BNO055.o: ../Core/Src/BNO055.c ../Core/Inc/BNO055.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h
-../Core/Inc/BNO055.h:
-../Core/Inc/BNO055_STM32.h:
 ../Core/Inc/BNO055.h:
 ../Core/Inc/i2c.h:
 ../Core/Inc/main.h:

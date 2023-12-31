@@ -26,7 +26,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "BNO055_STM32.h"
+#include "BNO055.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -47,7 +47,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+uint16_t gyr_data;
+BNO055_FUNC_RETURN ret;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -96,11 +97,18 @@ int main(void)
   /* USER CODE BEGIN 2 */
   bno055_set_i2c_handler(&hi2c1);
   /* USER CODE END 2 */
-
+  // Initialize BNO055 configuration
+  ret = bno055_init(&default_bno055_config, &default_bno055_verification);
+  gyr_data = 0;
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  HAL_Delay(300);
+	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+	  bno055_read_gyr_x(&gyr_data);
+	  HAL_UART_Transmit(&huart2, (uint8_t *)&gyr_data, sizeof(gyr_data), HAL_MAX_DELAY);
+	  //printf("Aqui\r\n");
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

@@ -1,3 +1,4 @@
+/*
 #ifndef BNO055_STM32_H
 #define BNO055_STM32_H
 
@@ -81,3 +82,4 @@ void bno055_delay(uint32_t ms){
 }
 
 #endif
+*/
