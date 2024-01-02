@@ -4,7 +4,7 @@ I2C_HandleTypeDef* i2c_dev;
 
 bno055_conf_t default_bno055_config = {
     .pwr_mode = POWER_MODE_NORMAL, // Default power mode
-    .op_mode = OPERATION_MODE_ACCGYRO, // Default operation mode (9 Degrees of Freedom)
+    .op_mode = OPERATION_MODE_IMU, // Default operation mode (9 Degrees of Freedom)
     .axis_remap_conf = AXIS_REMAP_CONFIG_P0, // Default axis remap configuration
     .axis_remap_sign = AXIS_REMAP_SIGN_P0, // Default axis remap sign
     .acc_g_range = ACC_CONFIG_4G, // Default accelerometer G range
@@ -94,14 +94,16 @@ uint8_t bno055_writeData(uint8_t* txdata) {
     return 1;
 }
 
+
 uint8_t bno055_readData(uint8_t reg, uint8_t *data, uint8_t len) {
 	uint8_t status;
 	status = HAL_I2C_Master_Transmit(i2c_dev, BNO055_I2C_ADDR_LO << 1, &reg, 1, 10);
 	if (status != HAL_OK) {
 		return 1;
 	}
-    bno055_delay(100);
+    bno055_delay(10);
     status = HAL_I2C_Master_Receive(i2c_dev, BNO055_I2C_ADDR_LO << 1, data, len, 10);
+    bno055_delay(10);
     if (status == HAL_OK) {
 		return 0;
 	}
@@ -109,6 +111,7 @@ uint8_t bno055_readData(uint8_t reg, uint8_t *data, uint8_t len) {
 		return 1;
 	}
 }
+
 
 void bno055_delay(uint32_t ms){
     HAL_Delay(ms);
@@ -153,7 +156,7 @@ BNO055_FUNC_RETURN bno055_init(bno055_conf_t * bno055_conf, bno055_verification_
     uint8_t axis_remap_conf [2] = {BNO055_AXIS_MAP_CONFIG, bno055_conf->axis_remap_conf};
     uint8_t axis_remap_sign [2] = {BNO055_AXIS_MAP_SIGN, bno055_conf->axis_remap_sign};
 
-    uint8_t unit_sel [2] = {BNO055_OPR_MODE, bno055_conf->unit_sel};
+    uint8_t unit_sel [2] = {BNO055_UNIT_SEL, bno055_conf->unit_sel};
 
     ret += bno055_writeData(conf_page0);
 	bno055_delay(10);

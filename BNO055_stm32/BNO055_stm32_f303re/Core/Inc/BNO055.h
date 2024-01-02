@@ -370,8 +370,8 @@ typedef enum{
  * | Magnetic Field Strength  | Micro Tesla      | NA                          |
  * | Angular Rate             | Dps              | [UNIT_SEL] : xxxxxxx0xb     |
  * |                          | Rps              | [UNIT_SEL] : xxxxxxx1xb     |
- * | Euler Angles             | Degrees          | [UNIT_SEL] : xxxxxxx0xb     |
- * |                          | Radians          | [UNIT_SEL] : xxxxxxx1xb     |
+ * | Euler Angles             | Degrees          | [UNIT_SEL] : xxxxxx0xxb     |
+ * |                          | Radians          | [UNIT_SEL] : xxxxxx1xxb     |
  * | Quaternion               | Quaternion units | NA                          |
  * | Temperature              | °C               | [UNIT_SEL] : xxx0xxxxb      |
  * |                          | °F               | [UNIT_SEL] : xxx1xxxxb      |
@@ -386,14 +386,14 @@ typedef enum {
 
     LINEAR_ACCELERATION_M_S2 = 0x00,
 
-    ANGULAR_RATE_DPS = 0x02,
-    ANGULAR_RATE_RPS = 0x03,
+    ANGULAR_RATE_DPS = 0x00,
+    ANGULAR_RATE_RPS = 0x02,
 
-    EULER_ANGLES_DEG = 0x04,
-    EULER_ANGLES_RAD = 0x05,
+    EULER_ANGLES_DEG = 0x00,
+    EULER_ANGLES_RAD = 0x04,
 
-    TEMPERATURE_C = 0x06,
-    TEMPERATURE_F = 0x07
+    TEMPERATURE_C = 0x00,
+    TEMPERATURE_F = 0x10
     
 } bno055_unit_selection_t;
 

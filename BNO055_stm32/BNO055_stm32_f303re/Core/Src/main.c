@@ -102,18 +102,28 @@ int main(void)
 
   char buffer[100];
   uint16_t gyro_x, gyro_y, gyro_z;
+  float f_gyro_x, f_gyro_y, f_gyro_z;
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  HAL_Delay(300);
+	  HAL_Delay(100);
 	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
 	  bno055_read_euler_h(&gyro_x);
 	  bno055_read_euler_r(&gyro_y);
 	  bno055_read_euler_p(&gyro_z);
+
+	  f_gyro_x = gyro_x / 1600.0f;
+	  f_gyro_y = gyro_y / 1600.0f;
+	  f_gyro_z = gyro_z / 1600.0f;
+
+	  /*
 	  snprintf(buffer, sizeof(buffer), "Gyro: X=%d Y=%d Z=%d\r\n", gyro_x, gyro_y, gyro_z);
 	  HAL_UART_Transmit(&huart2, (uint8_t *)buffer, strlen(buffer), HAL_MAX_DELAY);
-	  //printf("Aqui\r\n");
+	  */
+
+	  snprintf(buffer, sizeof(buffer), "Gyro Degrees: X=%.2f Y=%.2f Z=%.2f\r\n", f_gyro_x, f_gyro_y, f_gyro_z);
+	  HAL_UART_Transmit(&huart2, (uint8_t *)buffer, strlen(buffer), HAL_MAX_DELAY);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
