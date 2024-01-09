@@ -4,7 +4,7 @@ I2C_HandleTypeDef* i2c_dev;
 
 bno055_conf_t default_bno055_config = {
     .pwr_mode = POWER_MODE_NORMAL, // Default power mode
-    .op_mode = OPERATION_MODE_IMU, // Default operation mode (9 Degrees of Freedom)
+    .op_mode = OPERATION_MODE_NDOF, // Default operation mode (9 Degrees of Freedom)
     .axis_remap_conf = AXIS_REMAP_CONFIG_P0, // Default axis remap configuration
     .axis_remap_sign = AXIS_REMAP_SIGN_P0, // Default axis remap sign
     .acc_g_range = ACC_CONFIG_4G, // Default accelerometer G range

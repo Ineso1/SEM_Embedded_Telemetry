@@ -101,28 +101,51 @@ int main(void)
   ret = bno055_init(&default_bno055_config, &default_bno055_verification);
 
   char buffer[100];
-  uint16_t gyro_x, gyro_y, gyro_z;
-  float f_gyro_x, f_gyro_y, f_gyro_z;
+  //uint16_t gyro_w, gyro_x, gyro_y, gyro_z;
+  double f_gyro_x, f_gyro_y, f_gyro_z;
+  double f_acc_x, f_acc_y, f_acc_z;
+  bno055_linear_acc_t acc_xyz;
+  bno055_euler_t euler_hrp;
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
 	  HAL_Delay(100);
 	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-	  bno055_read_euler_h(&gyro_x);
-	  bno055_read_euler_r(&gyro_y);
-	  bno055_read_euler_p(&gyro_z);
-
-	  f_gyro_x = gyro_x / 1600.0f;
-	  f_gyro_y = gyro_y / 1600.0f;
-	  f_gyro_z = gyro_z / 1600.0f;
-
+	  bno055_read_euler_hrp(&euler_hrp);
+	  bno055_read_linear_acc_xyz(&acc_xyz);
 	  /*
-	  snprintf(buffer, sizeof(buffer), "Gyro: X=%d Y=%d Z=%d\r\n", gyro_x, gyro_y, gyro_z);
-	  HAL_UART_Transmit(&huart2, (uint8_t *)buffer, strlen(buffer), HAL_MAX_DELAY);
-	  */
+	  bno055_read_quaternion_w(&gyro_w);
+	  bno055_read_quaternion_x(&gyro_x);
+	  bno055_read_quaternion_y(&gyro_y);
+	  bno055_read_quaternion_z(&gyro_z);
 
-	  snprintf(buffer, sizeof(buffer), "Gyro Degrees: X=%.2f Y=%.2f Z=%.2f\r\n", f_gyro_x, f_gyro_y, f_gyro_z);
+	  f_gyro_w = gyro_w / (float)(1 << 14);
+	  f_gyro_x = gyro_x / (float)(1 << 14);
+	  f_gyro_y = gyro_y / (float)(1 << 14);
+	  f_gyro_z = gyro_z / (float)(1 << 14);
+
+
+	  bno055_read_euler_h(&gyro_x);
+	  bno055_read_euler_p(&gyro_y);
+	  bno055_read_euler_r(&gyro_z);
+
+	  f_gyro_x = (int16_t)gyro_x / 16.0;
+	  f_gyro_y = (int16_t)gyro_y / 16.0;
+	  f_gyro_z = (int16_t)gyro_z / 16.0;
+	   */
+
+	  f_gyro_x = (int16_t)euler_hrp.h / 16.0;
+	  f_gyro_y = (int16_t)euler_hrp.r / 16.0;
+	  f_gyro_z = (int16_t)euler_hrp.p / 16.0;
+
+	  f_acc_x = (int16_t)acc_xyz.x / 100.0;
+	  f_acc_y = (int16_t)acc_xyz.y / 100.0;
+	  f_acc_z = (int16_t)acc_xyz.z / 100.0;
+
+	  //snprintf(buffer, sizeof(buffer), "%.2f,%.2f,%.2f\r\n", f_gyro_x, f_gyro_y, f_gyro_z);
+	  //snprintf(buffer, sizeof(buffer), "%.2f,%.2f,%.2f\r\n", f_acc_x, f_acc_y, f_acc_z);
+	  snprintf(buffer, sizeof(buffer), "%.2f,%.2f,%.2f,%.2f,%.2f,%.2f\r\n", f_gyro_x, f_gyro_y, f_gyro_z, f_acc_x, f_acc_y, f_acc_z);
 	  HAL_UART_Transmit(&huart2, (uint8_t *)buffer, strlen(buffer), HAL_MAX_DELAY);
     /* USER CODE END WHILE */
 

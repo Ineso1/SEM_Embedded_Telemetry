@@ -685,3 +685,427 @@ Finished building: default.size.stdout
  
 Finished building: BNO055_stm32_f303re.list
  
+20:25:53 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: BNO055_stm32_f303re.elf
+ 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
+   text	   data	    bss	    dec	    hex	filename
+  42460	    492	   2356	  45308	   b0fc	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+Finished building: BNO055_stm32_f303re.list
+ 
+20:26:26 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  42460	    492	   2356	  45308	   b0fc	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+21:39:08 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: BNO055_stm32_f303re.elf
+ 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
+   text	   data	    bss	    dec	    hex	filename
+  42460	    492	   2356	  45308	   b0fc	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+Finished building: BNO055_stm32_f303re.list
+ 
+21:39:28 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  42460	    492	   2356	  45308	   b0fc	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+21:48:26 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:39: warning: variable 'f_gyro_z' set but not used [-Wunused-but-set-variable]
+  105 |   float f_gyro_w, f_gyro_x, f_gyro_y, f_gyro_z;
+      |                                       ^~~~~~~~
+../Core/Src/main.c:105:29: warning: variable 'f_gyro_y' set but not used [-Wunused-but-set-variable]
+  105 |   float f_gyro_w, f_gyro_x, f_gyro_y, f_gyro_z;
+      |                             ^~~~~~~~
+../Core/Src/main.c:105:19: warning: variable 'f_gyro_x' set but not used [-Wunused-but-set-variable]
+  105 |   float f_gyro_w, f_gyro_x, f_gyro_y, f_gyro_z;
+      |                   ^~~~~~~~
+../Core/Src/main.c:105:9: warning: variable 'f_gyro_w' set but not used [-Wunused-but-set-variable]
+  105 |   float f_gyro_w, f_gyro_x, f_gyro_y, f_gyro_z;
+      |         ^~~~~~~~
+arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: BNO055_stm32_f303re.elf
+ 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
+   text	   data	    bss	    dec	    hex	filename
+  42524	    492	   2356	  45372	   b13c	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+Finished building: BNO055_stm32_f303re.list
+ 
+21:48:39 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  42524	    492	   2356	  45372	   b13c	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+22:25:57 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: BNO055_stm32_f303re.elf
+ 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
+   text	   data	    bss	    dec	    hex	filename
+  42604	    492	   2356	  45452	   b18c	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+Finished building: BNO055_stm32_f303re.list
+ 
+22:26:06 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  42604	    492	   2356	  45452	   b18c	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+22:33:58 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:119:11: warning: implicit declaration of function 'bno055_read_euler_x'; did you mean 'bno055_read_euler_p'? [-Wimplicit-function-declaration]
+  119 |           bno055_read_euler_x(&gyro_x);
+      |           ^~~~~~~~~~~~~~~~~~~
+      |           bno055_read_euler_p
+../Core/Src/main.c:120:11: warning: implicit declaration of function 'bno055_read_euler_y'; did you mean 'bno055_read_euler_p'? [-Wimplicit-function-declaration]
+  120 |           bno055_read_euler_y(&gyro_y);
+      |           ^~~~~~~~~~~~~~~~~~~
+      |           bno055_read_euler_p
+../Core/Src/main.c:121:11: warning: implicit declaration of function 'bno055_read_euler_z'; did you mean 'bno055_read_euler_p'? [-Wimplicit-function-declaration]
+  121 |           bno055_read_euler_z(&gyro_z);
+      |           ^~~~~~~~~~~~~~~~~~~
+      |           bno055_read_euler_p
+../Core/Src/main.c:105:10: warning: unused variable 'f_gyro_w' [-Wunused-variable]
+  105 |   double f_gyro_w, f_gyro_x, f_gyro_y, f_gyro_z;
+      |          ^~~~~~~~
+../Core/Src/main.c:104:12: warning: unused variable 'gyro_w' [-Wunused-variable]
+  104 |   uint16_t gyro_w, gyro_x, gyro_y, gyro_z;
+      |            ^~~~~~
+arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+E:/stIDE/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+F:/SEM_mbed/SEM_Embedded_Telemetry/BNO055_stm32/BNO055_stm32_f303re/Debug/../Core/Src/main.c:119: undefined reference to `bno055_read_euler_x'
+E:/stIDE/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: F:/SEM_mbed/SEM_Embedded_Telemetry/BNO055_stm32/BNO055_stm32_f303re/Debug/../Core/Src/main.c:120: undefined reference to `bno055_read_euler_y'
+E:/stIDE/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: F:/SEM_mbed/SEM_Embedded_Telemetry/BNO055_stm32/BNO055_stm32_f303re/Debug/../Core/Src/main.c:121: undefined reference to `bno055_read_euler_z'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:79: BNO055_stm32_f303re.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+22:34:44 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:10: warning: unused variable 'f_gyro_w' [-Wunused-variable]
+  105 |   double f_gyro_w, f_gyro_x, f_gyro_y, f_gyro_z;
+      |          ^~~~~~~~
+../Core/Src/main.c:104:12: warning: unused variable 'gyro_w' [-Wunused-variable]
+  104 |   uint16_t gyro_w, gyro_x, gyro_y, gyro_z;
+      |            ^~~~~~
+arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: BNO055_stm32_f303re.elf
+ 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
+   text	   data	    bss	    dec	    hex	filename
+  42476	    492	   2356	  45324	   b10c	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+Finished building: BNO055_stm32_f303re.list
+ 
+22:34:46 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  42476	    492	   2356	  45324	   b10c	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+16:02:43 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:119:31: warning: pointer targets in passing argument 1 of 'bno055_read_euler_h' differ in signedness [-Wpointer-sign]
+  119 |           bno055_read_euler_h(&gyro_x);
+      |                               ^~~~~~~
+      |                               |
+      |                               int16_t * {aka short int *}
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/BNO055.h:556:40: note: expected 'uint16_t *' {aka 'short unsigned int *'} but argument is of type 'int16_t *' {aka 'short int *'}
+  556 | BNO055_FUNC_RETURN bno055_read_euler_h(uint16_t *);
+      |                                        ^~~~~~~~~~
+../Core/Src/main.c:120:31: warning: pointer targets in passing argument 1 of 'bno055_read_euler_p' differ in signedness [-Wpointer-sign]
+  120 |           bno055_read_euler_p(&gyro_y);
+      |                               ^~~~~~~
+      |                               |
+      |                               int16_t * {aka short int *}
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/BNO055.h:558:40: note: expected 'uint16_t *' {aka 'short unsigned int *'} but argument is of type 'int16_t *' {aka 'short int *'}
+  558 | BNO055_FUNC_RETURN bno055_read_euler_p(uint16_t *);
+      |                                        ^~~~~~~~~~
+../Core/Src/main.c:121:31: warning: pointer targets in passing argument 1 of 'bno055_read_euler_r' differ in signedness [-Wpointer-sign]
+  121 |           bno055_read_euler_r(&gyro_z);
+      |                               ^~~~~~~
+      |                               |
+      |                               int16_t * {aka short int *}
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/BNO055.h:557:40: note: expected 'uint16_t *' {aka 'short unsigned int *'} but argument is of type 'int16_t *' {aka 'short int *'}
+  557 | BNO055_FUNC_RETURN bno055_read_euler_r(uint16_t *);
+      |                                        ^~~~~~~~~~
+../Core/Src/main.c:105:10: warning: unused variable 'f_gyro_w' [-Wunused-variable]
+  105 |   double f_gyro_w, f_gyro_x, f_gyro_y, f_gyro_z;
+      |          ^~~~~~~~
+../Core/Src/main.c:104:11: warning: unused variable 'gyro_w' [-Wunused-variable]
+  104 |   int16_t gyro_w, gyro_x, gyro_y, gyro_z;
+      |           ^~~~~~
+arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: BNO055_stm32_f303re.elf
+ 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
+   text	   data	    bss	    dec	    hex	filename
+  42484	    492	   2356	  45332	   b114	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+Finished building: BNO055_stm32_f303re.list
+ 
+16:12:22 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:10: warning: unused variable 'f_gyro_w' [-Wunused-variable]
+  105 |   double f_gyro_w, f_gyro_x, f_gyro_y, f_gyro_z;
+      |          ^~~~~~~~
+../Core/Src/main.c:104:12: warning: unused variable 'gyro_w' [-Wunused-variable]
+  104 |   uint16_t gyro_w, gyro_x, gyro_y, gyro_z;
+      |            ^~~~~~
+arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: BNO055_stm32_f303re.elf
+ 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
+   text	   data	    bss	    dec	    hex	filename
+  42460	    492	   2356	  45308	   b0fc	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+Finished building: BNO055_stm32_f303re.list
+ 
+16:13:15 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:10: warning: unused variable 'f_gyro_w' [-Wunused-variable]
+  105 |   double f_gyro_w, f_gyro_x, f_gyro_y, f_gyro_z;
+      |          ^~~~~~~~
+../Core/Src/main.c:104:12: warning: unused variable 'gyro_w' [-Wunused-variable]
+  104 |   uint16_t gyro_w, gyro_x, gyro_y, gyro_z;
+      |            ^~~~~~
+arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: BNO055_stm32_f303re.elf
+ 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
+   text	   data	    bss	    dec	    hex	filename
+  42468	    492	   2356	  45316	   b104	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+Finished building: BNO055_stm32_f303re.list
+ 
+16:13:27 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  42468	    492	   2356	  45316	   b104	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+17:57:48 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:10: warning: unused variable 'f_gyro_w' [-Wunused-variable]
+  105 |   double f_gyro_w, f_gyro_x, f_gyro_y, f_gyro_z;
+      |          ^~~~~~~~
+arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: BNO055_stm32_f303re.elf
+ 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
+   text	   data	    bss	    dec	    hex	filename
+  42420	    492	   2356	  45268	   b0d4	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+Finished building: BNO055_stm32_f303re.list
+ 
+17:57:56 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  42420	    492	   2356	  45268	   b0d4	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+18:05:23 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:38: warning: passing argument 1 of 'bno055_read_linear_acc_xyz' from incompatible pointer type [-Wincompatible-pointer-types]
+  116 |           bno055_read_linear_acc_xyz(&acc_xyz);
+      |                                      ^~~~~~~~
+      |                                      |
+      |                                      bno055_acc_t *
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/BNO055.h:570:47: note: expected 'bno055_linear_acc_t *' but argument is of type 'bno055_acc_t *'
+  570 | BNO055_FUNC_RETURN bno055_read_linear_acc_xyz(bno055_linear_acc_t *);
+      |                                               ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:106:28: warning: variable 'f_acc_z' set but not used [-Wunused-but-set-variable]
+  106 |   double f_acc_x, f_acc_y, f_acc_z;
+      |                            ^~~~~~~
+../Core/Src/main.c:106:19: warning: variable 'f_acc_y' set but not used [-Wunused-but-set-variable]
+  106 |   double f_acc_x, f_acc_y, f_acc_z;
+      |                   ^~~~~~~
+../Core/Src/main.c:106:10: warning: variable 'f_acc_x' set but not used [-Wunused-but-set-variable]
+  106 |   double f_acc_x, f_acc_y, f_acc_z;
+      |          ^~~~~~~
+../Core/Src/main.c:105:10: warning: unused variable 'f_gyro_w' [-Wunused-variable]
+  105 |   double f_gyro_w, f_gyro_x, f_gyro_y, f_gyro_z;
+      |          ^~~~~~~~
+arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: BNO055_stm32_f303re.elf
+ 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
+   text	   data	    bss	    dec	    hex	filename
+  42700	    492	   2356	  45548	   b1ec	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+Finished building: BNO055_stm32_f303re.list
+ 
+18:06:00 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:28: warning: variable 'f_acc_z' set but not used [-Wunused-but-set-variable]
+  106 |   double f_acc_x, f_acc_y, f_acc_z;
+      |                            ^~~~~~~
+../Core/Src/main.c:106:19: warning: variable 'f_acc_y' set but not used [-Wunused-but-set-variable]
+  106 |   double f_acc_x, f_acc_y, f_acc_z;
+      |                   ^~~~~~~
+../Core/Src/main.c:106:10: warning: variable 'f_acc_x' set but not used [-Wunused-but-set-variable]
+  106 |   double f_acc_x, f_acc_y, f_acc_z;
+      |          ^~~~~~~
+../Core/Src/main.c:105:10: warning: unused variable 'f_gyro_w' [-Wunused-variable]
+  105 |   double f_gyro_w, f_gyro_x, f_gyro_y, f_gyro_z;
+      |          ^~~~~~~~
+arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: BNO055_stm32_f303re.elf
+ 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
+   text	   data	    bss	    dec	    hex	filename
+  42700	    492	   2356	  45548	   b1ec	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+Finished building: BNO055_stm32_f303re.list
+ 
+18:07:25 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:28: warning: variable 'f_acc_z' set but not used [-Wunused-but-set-variable]
+  106 |   double f_acc_x, f_acc_y, f_acc_z;
+      |                            ^~~~~~~
+../Core/Src/main.c:106:19: warning: variable 'f_acc_y' set but not used [-Wunused-but-set-variable]
+  106 |   double f_acc_x, f_acc_y, f_acc_z;
+      |                   ^~~~~~~
+../Core/Src/main.c:106:10: warning: variable 'f_acc_x' set but not used [-Wunused-but-set-variable]
+  106 |   double f_acc_x, f_acc_y, f_acc_z;
+      |          ^~~~~~~
+arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: BNO055_stm32_f303re.elf
+ 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
+   text	   data	    bss	    dec	    hex	filename
+  42700	    492	   2356	  45548	   b1ec	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+Finished building: BNO055_stm32_f303re.list
+ 
+18:08:47 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: BNO055_stm32_f303re.elf
+ 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
+   text	   data	    bss	    dec	    hex	filename
+  42732	    492	   2356	  45580	   b20c	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+Finished building: BNO055_stm32_f303re.list
+ 
+18:09:03 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  42732	    492	   2356	  45580	   b20c	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+18:11:55 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:30: warning: variable 'f_gyro_z' set but not used [-Wunused-but-set-variable]
+  105 |   double f_gyro_x, f_gyro_y, f_gyro_z;
+      |                              ^~~~~~~~
+../Core/Src/main.c:105:20: warning: variable 'f_gyro_y' set but not used [-Wunused-but-set-variable]
+  105 |   double f_gyro_x, f_gyro_y, f_gyro_z;
+      |                    ^~~~~~~~
+../Core/Src/main.c:105:10: warning: variable 'f_gyro_x' set but not used [-Wunused-but-set-variable]
+  105 |   double f_gyro_x, f_gyro_y, f_gyro_z;
+      |          ^~~~~~~~
+arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: BNO055_stm32_f303re.elf
+ 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
+   text	   data	    bss	    dec	    hex	filename
+  42700	    492	   2356	  45548	   b1ec	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+Finished building: BNO055_stm32_f303re.list
+ 
+19:25:45 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: BNO055_stm32_f303re.elf
+ 
+arm-none-eabi-size   BNO055_stm32_f303re.elf 
+arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
+   text	   data	    bss	    dec	    hex	filename
+  42732	    492	   2356	  45580	   b20c	BNO055_stm32_f303re.elf
+Finished building: default.size.stdout
+ 
+Finished building: BNO055_stm32_f303re.list
+ 

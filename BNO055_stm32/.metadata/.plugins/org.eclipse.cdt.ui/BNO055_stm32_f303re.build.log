@@ -1,17 +1,18 @@
-18:36:39 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
+19:25:45 **** Incremental Build of configuration Debug for project BNO055_stm32_f303re ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/BNO055.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BNO055.d" -MT"Core/Src/BNO055.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BNO055.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xE -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-g++ -o "BNO055_stm32_f303re.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\SEM_mbed\SEM_Embedded_Telemetry\BNO055_stm32\BNO055_stm32_f303re\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO055_stm32_f303re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: BNO055_stm32_f303re.elf
  
 arm-none-eabi-size   BNO055_stm32_f303re.elf 
 arm-none-eabi-objdump -h -S  BNO055_stm32_f303re.elf  > "BNO055_stm32_f303re.list"
    text	   data	    bss	    dec	    hex	filename
-  42476	    492	   2356	  45324	   b10c	BNO055_stm32_f303re.elf
+  42732	    492	   2356	  45580	   b20c	BNO055_stm32_f303re.elf
 Finished building: default.size.stdout
  
 Finished building: BNO055_stm32_f303re.list
  
 
-18:36:41 Build Finished. 0 errors, 0 warnings. (took 1s.880ms)
+19:25:47 Build Finished. 0 errors, 0 warnings. (took 1s.814ms)
 
